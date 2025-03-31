@@ -5,11 +5,13 @@ CVP_CONFIGLETS:
   Alias_test: “alias ship show ip interface brief”
   MLAG_Left: "{{ lookup('file','{{path}}/configlets/MLAG_Left.cfg') }}"
   MLAG_Right: "{{ lookup('file','{{path}}/configlets/MLAG_Right.cfg') }}"
+
 CVP_CONTAINERS:
   DC1:
     parentContainerName: Tenant
   DC2:
     parentContainerName: Tenant
+
 CVP_DEVICES_MLAG:
   - fqdn: 'leaf1'
     parentContainerName: 'Leaf'
@@ -35,4 +37,3 @@ CVP_DEVICES_MLAG:
       - 'ATD-INFRA'
       - 'leaf4-base'
       - 'MLAG_Right'
-      
