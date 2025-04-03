@@ -20,5 +20,5 @@ servers:
         mode: access
         spanning_tree_portfast: edge
         port_channel:
-          description: PortChannel host2
+          description: PortChannel host3
           mode: active
